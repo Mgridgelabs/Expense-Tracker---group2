@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "p123",
+      "monthlyBudget": 30000
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "p852",
+      "monthlyBudget": 20000
+    },
+    {
+      "id": "2b67",
+      "name": "Ian ",
+      "email": "gridge37@gmail.com",
+      "password": "p1234"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "91bd",
+      "category": "Entertainment",
+      "description": "spotify ",
+      "amount": "400",
+      "date": "2024-08-01"
+    },
+    {
+      "id": "2737",
+      "category": "Transport",
+      "description": "town ",
+      "amount": "500",
+      "date": "2024-08-07",
+      "userId": "2b67"
+    },
+    {
+      "id": "92bb",
+      "category": "Groceries",
+      "description": "cooking oil ",
+      "amount": "1500",
+      "date": "2024-08-03",
+      "userId": "2b67"
+    },
+    {
+      "id": "c032",
+      "category": "Utilities",
+      "description": "wifi",
+      "amount": "1500",
+      "date": "2024-08-30",
+      "userId": "2b67"
+    },
+    {
+      "id": "5714",
+      "category": "Personal Care",
+      "description": "skincare",
+      "amount": "5500",
+      "date": "2024-08-01",
+      "userId": "2"
+    },
+    {
+      "id": "7e61",
+      "category": "Groceries",
+      "description": "foodstuff",
+      "amount": "3500",
+      "date": "2024-08-01",
+      "userId": "1"
+    }
+  ]
+}
