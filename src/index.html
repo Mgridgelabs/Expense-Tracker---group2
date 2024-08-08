@@ -223,6 +223,15 @@
                     </div>
                 </section>
             </div>
+            <section id="budgetSection">
+                <h4>Set Your Budget</h4>
+                <form id="budgetForm">
+                    <label for="budgetAmount">Monthly Budget: </label>
+                    <input type="number" id="budgetAmount" name="budgetAmount" placeholder="Enter your monthly budget" required>
+                    <button type="submit" class="btn btn-primary">Save Budget</button>
+                </form>
+            </section>
+            
             <section id="expensesSummary">
                 <h4>Summary</h4>
                 <div class="viewSummary">
@@ -257,7 +266,8 @@
     <footer>
         <p>&copy; 2024 Bucks Buddy. All rights</p>
     </footer>
-    <script type="text/javascript" src="./src/index.js"></script>
+    <!-- <script type="text/javascript" src="./src/index.js"></script> -->
+     <script src="./index.js"></script>
     <script src="/src/records.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

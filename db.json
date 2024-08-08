@@ -15,10 +15,16 @@
       "monthlyBudget": 20000
     },
     {
-      "id": "2b67",
+      "id": "3",
       "name": "Ian ",
       "email": "gridge37@gmail.com",
       "password": "p1234"
+    },
+    {
+      "id": "8bca",
+      "name": "gridge",
+      "email": "gridge3@gmail.com",
+      "password": "p3180"
     }
   ],
   "expenses": [
@@ -35,7 +41,7 @@
       "description": "town ",
       "amount": "500",
       "date": "2024-08-07",
-      "userId": "2b67"
+      "userId": "3"
     },
     {
       "id": "92bb",
@@ -43,7 +49,7 @@
       "description": "cooking oil ",
       "amount": "1500",
       "date": "2024-08-03",
-      "userId": "2b67"
+      "userId": "3"
     },
     {
       "id": "c032",
@@ -51,7 +57,7 @@
       "description": "wifi",
       "amount": "1500",
       "date": "2024-08-30",
-      "userId": "2b67"
+      "userId": "3"
     },
     {
       "id": "5714",
@@ -68,6 +74,22 @@
       "amount": "3500",
       "date": "2024-08-01",
       "userId": "1"
+    },
+    {
+      "id": "86cb",
+      "userId": null,
+      "category": null,
+      "amount": 6500,
+      "date": "2024-08-01",
+      "description": "jet "
+    },
+    {
+      "id": "3121",
+      "userId": "8bca",
+      "category": null,
+      "amount": 500,
+      "date": "2024-08-02",
+      "description": "cream "
     }
   ]
 }
