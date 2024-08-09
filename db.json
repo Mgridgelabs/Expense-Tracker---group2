@@ -90,6 +90,14 @@
       "amount": 500,
       "date": "2024-08-02",
       "description": "cream "
+    },
+    {
+      "id": "cbc5",
+      "userId": null,
+      "category": null,
+      "amount": 560,
+      "date": "2024-08-22",
+      "description": " 2kg wheat flour"
     }
   ]
 }
