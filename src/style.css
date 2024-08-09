@@ -1,261 +1,296 @@
 /* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f0;
-  }
- main {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+main {
   display: flex;
   flex-direction: row;
- } 
-  /* Header Styles */
-  header {
-    background-color: #f0f0e8;
-    color: #333;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  header nav {
-    display: flex;
-    gap: 10px;
-  }
-  
-  header p {
-    margin: 0;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  header p:hover {
-    color: #666;
-  }
-  
-  /* Main Content Styles */
-  .content {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height: max-content;
-  }
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-  .FAQs {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #e4e4e4;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(175, 153, 153, 0.1);
-  }
-  footer {
-    background-color: #f0f0e8;
-    color: #333;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #expenseChart {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-  }
-  .UserInfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .edit {
-    margin-right: 20px;
-  }
-  
-  #appName {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  #currentExpense, #currentDate, #usersName, #remainingBudget, #myBudget {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  /* Form Styles */
-  #addExpensesSection {
-    background-color: #f5f5f0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #addExpenseForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  #formSelect {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    font-size: 14px;
-  }
-  
-  input[type="text"], input[type="number"], input[type="date"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-  }
-  
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 16px;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #43a047;
-  }
-  
-  /* Table Styles */
-  #viewExpensesSection {
-    background-color: #f5f5f0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-  }
+/* Header Styles */
+header {
+  background-color: #f0f0e8;
+  color: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
 
-  #expensesSummary {
-    background-color: #f5f5f0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 140px;
-    margin-left: 10px;
-    width: 500px;
-  
-  }
-  .viewSummary {
-    width: max-content;
-    text-align: left;
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #444;
+}
 
-  }
-  #expensesTable {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f0f0e8;
-    color: #333;
-  }
-  
-  td {
-    border-top: 1px solid #ddd;
-  }
-  
-  tr:hover {
-    background-color: #f0f0e8;
-  }
-  .table-actions {
-    display: flex;
-    flex-direction: row;
-  }
+header nav {
+  display: flex;
+  gap: 15px;
+}
 
-  #sortButton + .dropdown-menu a.active {
-    font-weight: bold;
-    background-color: #f1f1f1;
-  }
-  .exp {
-    margin-left: 15px;
-    list-style: circle;
-  }
+header p {
+  margin: 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
 
-  .editing {
-    padding: 10px;
-    text-align: left;
-  }
+header p:hover {
+  color: #666;
+}
 
-  #deleteButton {
-    background-color: rgb(209, 66, 66);
-    color: white;
-    margin-left: 2px;
-    border-radius: 10px;
-  }
+/* Adjusted Main Content Styles for Fixed Header */
+.content {
+  max-width: 1000px;
+  margin: 80px auto 40px auto; /* Add top margin to account for fixed header */
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
+.FAQs {
+  max-width: 1000px;
+  margin: 80px auto 40px auto; /* Add top margin to account for fixed header */
+  padding: 25px;
+  background-color: #e4e4e4;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(175, 153, 153, 0.1);
+}
 
+footer {
+  background-color: #f0f0e8;
+  color: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #ddd;
+}
 
-   /* records-modal */
+/* Rest of the CSS remains unchanged */
+#expenseChart {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
+/* User Info Styles */
+.UserInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.edit {
+  margin-right: 20px;
+}
+
+#appName {
+  font-size: 22px;
+  font-weight: bold;
+  color: #444;
+}
+
+#currentExpense, #currentDate, #usersName, #remainingBudget, #myBudget {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Form Styles */
+#addExpensesSection {
+  background-color: #f5f5f0;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#addExpenseForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  padding: 20px;
+}
+
+#formSelect {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #43a047;
+}
+
+/* Table Styles */
+#viewExpensesSection {
+  background-color: #f5f5f0;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#expensesSummary {
+  background-color: #f5f5f0;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 500px;
+}
+
+.viewSummary {
+  width: max-content;
+  text-align: left;
+}
+
+#expensesTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0e8;
+  color: #333;
+}
+
+td {
+  border-top: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f0f0e8;
+}
+
+.table-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#sortButton + .dropdown-menu a.active {
+  font-weight: bold;
+  background-color: #f1f1f1;
+}
+
+.exp {
+  margin-left: 15px;
+  list-style: circle;
+}
+
+.editing {
+  padding: 15px;
+  text-align: left;
+}
+
+#deleteButton {
+  background-color: rgb(209, 66, 66);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+#deleteButton:hover {
+  background-color: rgb(180, 50, 50);
+}
+
+/* Records Modal Styles */
 #recordsButton {
-    margin-left: 90%;
-    display: flex;
-    color: black;
-    background-color: skyblue;
-    font-weight: bold;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: skyblue;
+  font-weight: bold;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #recordsButton:hover {
-    background-color: gray;
-    color: white;
+  background-color: gray;
+  color: white;
 }
 
 .records-modal .modal-dialog {
-    max-width: 600px;
+  max-width: 700px;
 }
 
 .records-modal .modal-content {
-    padding: 10px;
-    border: 1px solid #888;
-    background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  background-color: #fefefe;
+  border-radius: 8px;
 }
 
 .records-modal .modal-header .btn-close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .records-modal .modal-header .btn-close:hover,
 .records-modal .modal-header .btn-close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-
